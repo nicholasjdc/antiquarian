@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://cxem62ypp2we"]
+
+[ext_resource type="VideoStream" uid="uid://b1yl0ar42ufbv" path="res://Movies/goodfornothings.ogv" id="1_732e7"]
+[ext_resource type="Script" path="res://Scenes/ScreenPlayer.gd" id="2_2m8fs"]
+[ext_resource type="PackedScene" uid="uid://ds6b0elkfmp48" path="res://Scenes/16mmCamera.tscn" id="3_2q7f3"]
+[ext_resource type="PackedScene" uid="uid://byvur7ulfefii" path="res://Scenes/RecordPlayer.tscn" id="4_m5yt4"]
+[ext_resource type="PackedScene" uid="uid://p7pxlpusxrpl" path="res://meat.tscn" id="4_ota7v"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_qot6m"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sd2xu"]
+resource_local_to_scene = true
+emission_enabled = true
+emission_texture = SubResource("ViewportTexture_qot6m")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_h30tx"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_sd2xu")
+
+[node name="Theater" type="Node3D"]
+
+[node name="SubViewport" type="SubViewport" parent="."]
+size = Vector2i(320, 240)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="SubViewport"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="SubViewport/SubViewportContainer"]
+layout_mode = 2
+stream = ExtResource("1_732e7")
+autoplay = true
+script = ExtResource("2_2m8fs")
+
+[node name="Screen" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, 5.0182, 2.30636, -1.95496)
+mesh = SubResource("PlaneMesh_h30tx")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Screen"]
+autoplay = true
+max_distance = 15.63
+
+[node name="16mmProjector" parent="." instance=ExtResource("3_2q7f3")]
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0, 1.48161, -2.06654)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="16mmProjector"]
+light_color = Color(0.491843, 0.491843, 0, 1)
+
+[node name="RecordPlayer" parent="." instance=ExtResource("4_m5yt4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.13228, 1.59263, 0)
+
+[node name="meat" parent="." instance=ExtResource("4_ota7v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[connection signal="finished" from="SubViewport/SubViewportContainer/VideoStreamPlayer" to="16mmProjector" method="_on_video_stream_player_finished"]
+[connection signal="interacted" from="16mmProjector" to="SubViewport/SubViewportContainer/VideoStreamPlayer" method="_on_mm_projector_interacted"]
