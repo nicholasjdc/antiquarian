@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c476qrj8l0je7"
-path="res://.godot/imported/Cube_sheen_tint.png-47b20d6fcfceadcbf6a3f6104e9524ad.ctex"
+uid="uid://ckaajnnurdxmk"
+path="res://.godot/imported/Cube_color.png-d189c91b405d48668d10c5f050eca52f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Cube_sheen_tint.png"
-dest_files=["res://.godot/imported/Cube_sheen_tint.png-47b20d6fcfceadcbf6a3f6104e9524ad.ctex"]
+source_file="res://Models/meat_theater/textures/Cube_color.png"
+dest_files=["res://.godot/imported/Cube_color.png-d189c91b405d48668d10c5f050eca52f.ctex"]
 
 [params]
 

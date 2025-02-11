@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ccpkjujeik6g4"
-path="res://.godot/imported/meat.blend-c278c7b0c630a0f20b9562054c6d2987.scn"
+path="res://.godot/imported/meat.blend-c7a42e1e0110c71f4fb16ecf79f91fdd.scn"
 
 [deps]
 
-source_file="res://meat.blend"
-dest_files=["res://.godot/imported/meat.blend-c278c7b0c630a0f20b9562054c6d2987.scn"]
+source_file="res://Models/meat_theater/meat.blend"
+dest_files=["res://.godot/imported/meat.blend-c7a42e1e0110c71f4fb16ecf79f91fdd.scn"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf65k4kayte52"
-path="res://.godot/imported/Cube_metallic.png-c43a25532ec66175ea0b8646f0e9c6a5.ctex"
+uid="uid://dngdkljns0k7l"
+path="res://.godot/imported/Cube_normal.png-cbb5998933526cf3f591f697402c948d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Cube_metallic.png"
-dest_files=["res://.godot/imported/Cube_metallic.png-c43a25532ec66175ea0b8646f0e9c6a5.ctex"]
+source_file="res://Models/meat_theater/textures/Cube_normal.png"
+dest_files=["res://.godot/imported/Cube_normal.png-cbb5998933526cf3f591f697402c948d.ctex"]
 
 [params]
 
