@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=4 uid="uid://ds6b0elkfmp48"]
 
-[ext_resource type="Script" path="res://Scenes/16mmCamera.gd" id="1_dswij"]
-[ext_resource type="AudioStream" uid="uid://b64que0iyaaeu" path="res://Audio/SoundEffects/16mm_proj_hum.ogg" id="2_jva3w"]
+[ext_resource type="Script" path="res://Scripts/Particular/16mmCamera.gd" id="1_dswij"]
+[ext_resource type="AudioStream" uid="uid://dya5ohl80afyj" path="res://Audio/SoundEffects/16mm_proj_hum.ogg" id="2_jva3w"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1kqv8"]
 resource_name = "projector"

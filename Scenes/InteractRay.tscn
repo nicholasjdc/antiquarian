@@ -1,9 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://bbrf5crtb1ba0"]
 
-[ext_resource type="Script" path="res://InteractRay.gd" id="1_orkog"]
+[ext_resource type="Script" path="res://Scripts/Base/InteractRay.gd" id="1_orkog"]
 
 [node name="InteractRay" type="RayCast3D"]
-visible = false
 target_position = Vector3(0, 0, -2)
 collision_mask = 2
 script = ExtResource("1_orkog")

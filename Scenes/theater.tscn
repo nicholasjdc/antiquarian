@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://cxem62ypp2we"]
 
 [ext_resource type="VideoStream" uid="uid://b1yl0ar42ufbv" path="res://Movies/goodfornothings.ogv" id="1_732e7"]
-[ext_resource type="Script" path="res://Scenes/ScreenPlayer.gd" id="2_2m8fs"]
+[ext_resource type="Script" path="res://Scripts/Particular/ScreenPlayer.gd" id="2_2m8fs"]
 [ext_resource type="PackedScene" uid="uid://ds6b0elkfmp48" path="res://Scenes/16mmCamera.tscn" id="3_2q7f3"]
 [ext_resource type="PackedScene" uid="uid://byvur7ulfefii" path="res://Scenes/RecordPlayer.tscn" id="4_m5yt4"]
-[ext_resource type="PackedScene" uid="uid://p7pxlpusxrpl" path="res://meat.tscn" id="4_ota7v"]
+[ext_resource type="PackedScene" uid="uid://p7pxlpusxrpl" path="res://Scenes/meat.tscn" id="4_ota7v"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_qot6m"]
 viewport_path = NodePath("SubViewport")

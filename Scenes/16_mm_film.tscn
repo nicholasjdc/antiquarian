@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=4 uid="uid://c7dfpqhbkkft7"]
 
-[ext_resource type="Script" path="res://Scenes/16_mm_film.gd" id="1_ly26l"]
+[ext_resource type="Script" path="res://Scripts/Particular/16_mm_film.gd" id="1_ly26l"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0o3wp"]
 resource_name = "disk"

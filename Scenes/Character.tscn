@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dk6m6pvrtqy8r"]
 
-[ext_resource type="Script" path="res://CharacterBody3D.gd" id="1_j6yoj"]
-[ext_resource type="PackedScene" uid="uid://bbrf5crtb1ba0" path="res://InteractRay.tscn" id="2_yo8ou"]
+[ext_resource type="Script" path="res://Scripts/Particular/PlayerController.gd" id="1_xt52c"]
+[ext_resource type="PackedScene" uid="uid://bbrf5crtb1ba0" path="res://Scenes/InteractRay.tscn" id="2_yo8ou"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_vk6or"]
 
@@ -9,7 +9,7 @@
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
-script = ExtResource("1_j6yoj")
+script = ExtResource("1_xt52c")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -31,5 +31,3 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0, 0, 0)
 
 [node name="InteractRay" parent="Head/Camera3D" instance=ExtResource("2_yo8ou")]
-debug_shape_custom_color = Color(1, 0, 0, 1)
-debug_shape_thickness = 1
