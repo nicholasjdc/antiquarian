@@ -1,3 +1,21 @@
-[gd_scene format=3 uid="uid://bld1afrd3ked2"]
+[gd_scene load_steps=4 format=3 uid="uid://bld1afrd3ked2"]
+
+[ext_resource type="PackedScene" uid="uid://c5b85m2ecox3s" path="res://Scenes/brick_room.tscn" id="1_nxidg"]
+[ext_resource type="PackedScene" uid="uid://byvur7ulfefii" path="res://Scenes/RecordPlayer.tscn" id="2_oiurk"]
+[ext_resource type="PackedScene" uid="uid://dk6m6pvrtqy8r" path="res://Scenes/Character.tscn" id="3_8kfft"]
 
 [node name="MainRoom" type="Node3D"]
+
+[node name="brick_room" parent="." instance=ExtResource("1_nxidg")]
+
+[node name="RecordPlayer" parent="." instance=ExtResource("2_oiurk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, -2, 0)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.31027, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("3_8kfft")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -2, 0, 0)

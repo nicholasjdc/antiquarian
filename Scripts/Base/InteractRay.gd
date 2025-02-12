@@ -4,11 +4,9 @@ extends RayCast3D
 @export var heldData = {}
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(_delta) ->void:
-	print("hello")
 	$Prompt.text= ""
 	if is_colliding():
 		var collider = get_collider()
-		print(collider)
 		if collider is Interactable:
 			$Prompt.text = collider.get_prompt()
 		
